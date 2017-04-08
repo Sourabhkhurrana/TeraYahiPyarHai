@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="Fragments.School.ModifyFaculty">
@@ -43,10 +44,11 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
+
     <ScrollView
         android:layout_below="@+id/cardView1"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -54,10 +56,11 @@
             android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:cardElevation="5dp"
-            app:cardCornerRadius="3dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginBottom="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -142,6 +145,41 @@
                     android:orientation="horizontal">
 
                     <ImageView
+                        android:id="@+id/facultyContactIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/phoner" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyContactNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="Contact No"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
                         android:id="@+id/facultyDobIcon"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -201,7 +239,6 @@
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -225,7 +262,6 @@
                         android:entries="@array/country"
                         android:textAlignment="center" />
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -282,7 +318,6 @@
                     </LinearLayout>
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -351,43 +386,6 @@
                             android:maxLines="5" />
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="50dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/facultyContactIcon"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/phoner" />
-
-                    <android.support.design.widget.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center_vertical">
-
-                        <EditText
-                            android:id="@+id/facultyContactNo"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:layout_marginStart="5dp"
-                            android:gravity="center_vertical"
-                            android:hint="Contact No"
-                            android:inputType="number"
-                            android:maxLength="12"
-                            android:maxLines="5" />
-                    </android.support.design.widget.TextInputLayout>
-
-                </LinearLayout>
-
 
             </LinearLayout>
             <!--<RelativeLayout
@@ -996,70 +994,82 @@
 
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:backgroundTint="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
 
-        android:layout_marginRight="95dp">
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="16dp"-->
 
-        <TextView
-            android:id="@+id/topicTextFloat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:clickable="true"
-            android:text="Topics"
-            android:textColor="@color/Black" />
+        <!--android:layout_marginRight="95dp">-->
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:contextClickable="true"
-            android:src="@drawable/countryg" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/topicTextFloat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:clickable="true"-->
+            <!--android:text="Topics"-->
+            <!--android:textColor="@color/Black" />-->
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="95dp"
-        android:layout_marginRight="16dp">
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:contextClickable="true"-->
+            <!--android:src="@drawable/countryg" />-->
+    <!--</LinearLayout>-->
 
-        <TextView
-            android:id="@+id/leaveQuestionFloat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:clickable="true"
-            android:text="Leave Question"
-            android:textColor="@color/Black" />
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="95dp"-->
+        <!--android:layout_marginRight="16dp">-->
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:src="@drawable/cityr" />
-    </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/leaveQuestionFloat"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:clickable="true"-->
+            <!--android:text="Leave Question"-->
+            <!--android:textColor="@color/Black" />-->
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:focusableInTouchMode="true"
-        android:src="@drawable/cityg"
-        app:elevation="6dp" />
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:src="@drawable/cityr" />-->
+    <!--</LinearLayout>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:src="@drawable/cityg"-->
+        <!--app:elevation="6dp" />-->
 
 
     <!--<android.support.design.widget.FloatingActionButton-->
