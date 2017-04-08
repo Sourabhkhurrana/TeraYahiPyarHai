@@ -115,10 +115,11 @@
 
                 <ImageView
                     android:id="@+id/schoolCLassIcon"
-                    android:layout_width="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_centerVertical="true"
                     android:layout_toLeftOf="@+id/schoolCLass"
-                    android:layout_height="30dp"
+
                     android:src="@drawable/bookb" />
 
                 <Spinner
@@ -140,8 +141,8 @@
 
                 <ImageView
                     android:id="@+id/viceChairmanIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/vicechairmaniconb" />
 
@@ -158,9 +159,10 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:hint="Vice Chairman"
-                        android:inputType="textPostalAddress"
+                        android:inputType="textPersonName"
                         android:maxLength="20"
-                        android:maxLines="5" />
+                        android:maxLines="5"
+                        android:textSize="16sp" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
@@ -174,8 +176,8 @@
 
                 <ImageView
                     android:id="@+id/principalIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/personb" />
 
@@ -194,6 +196,7 @@
                         android:hint="principal"
                         android:inputType="textEmailAddress"
                         android:maxLength="50"
+                        android:textSize="16sp"
                         android:maxLines="5" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
@@ -207,8 +210,8 @@
 
                 <ImageView
                     android:id="@+id/emailIDIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/emailb" />
 
@@ -227,6 +230,7 @@
                         android:hint="School Email ID"
                         android:inputType="number"
                         android:maxLength="6"
+                        android:textSize="16sp"
                         android:maxLines="5" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
@@ -240,8 +244,8 @@
 
                 <ImageView
                     android:id="@+id/pincodeIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/pincodeb" />
 
@@ -258,6 +262,7 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:hint="Pincode"
+                        android:textSize="16sp"
                         android:inputType="number"
                         android:maxLength="12"
                         android:maxLines="5" />
@@ -274,8 +279,8 @@
 
                 <ImageView
                     android:id="@+id/schoolAddressIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ipb" />
 
@@ -307,8 +312,8 @@
 
                 <ImageView
                     android:id="@+id/contactNoIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/phoneb" />
 
@@ -325,6 +330,7 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:hint="Contact No"
+                        android:textSize="16sp"
                         android:inputType="number"
                         android:maxLength="12"
                         android:maxLines="5" />
@@ -340,8 +346,8 @@
 
                 <ImageView
                     android:id="@+id/website"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/websiteb" />
 
@@ -358,6 +364,7 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:hint="Website"
+                        android:textSize="16sp"
                         android:inputType="number"
                         android:maxLength="12"
                         android:maxLines="5" />
@@ -375,8 +382,8 @@
 
                 <ImageView
                     android:id="@+id/discriptionIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/detailb" />
 
@@ -391,7 +398,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="5dp"
-
+                        android:textSize="16sp"
                         android:gravity="center_vertical"
                         android:hint="Discription"
                         android:inputType="number"

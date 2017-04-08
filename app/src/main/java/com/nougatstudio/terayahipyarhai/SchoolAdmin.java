@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import Fragments.School.AddFaculty;
 import Fragments.School.ModifyFaculty;
+import Fragments.School.Notices;
 
 
 public class SchoolAdmin extends AppCompatActivity
@@ -109,7 +110,9 @@ public class SchoolAdmin extends AppCompatActivity
             ft2.replace(R.id.fragmentContainerLayout, new ModifyFaculty());
             ft2.commit();
         } else if (id == R.id.nav_notice) {
-
+            FragmentTransaction notice = getSupportFragmentManager().beginTransaction();
+            notice.replace(R.id.fragmentContainerLayout, new Notices());
+            notice.commit();
         } else if (id == R.id.nav_notification) {
 
         } else if (id == R.id.nav_logout) {

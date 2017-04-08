@@ -2,9 +2,365 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="Fragments.School.Notices">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+        <ViewSwitcher
+            android:id="@+id/viewSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+
+<!-- First Layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_icon"
+                                    android:layout_height="@dimen/image_icon"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/studentsp" />
+
+                                <Switch
+                                    android:id="@+id/filterSIngleStudentSwitch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="Individual Student" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView"                                    android:layout_width="@dimen/image_icon"
+                                    android:layout_height="@dimen/image_icon"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/groupp" />
+
+                                <Switch
+                                    android:id="@+id/filterAllSwitch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="All Student" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_icon"
+                                    android:layout_height="@dimen/image_icon"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/bookp" />
+
+                                <Switch
+                                    android:id="@+id/filterpincodeSwitch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="Student  By Class" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_icon"
+                                    android:layout_height="@dimen/image_icon"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/facultyaddedp" />
+
+
+                                <Switch
+                                    android:id="@+id/filterActiveStatusSwitch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="Individual Faculty" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="@dimen/image_icon"
+                                    android:layout_height="@dimen/image_icon"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/groupp" />
+
+
+                                <Switch
+                                    android:id="@+id/filterPendingStatusSwitch"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:text="All Faculty" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cardView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:elevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+
+                                    android:id="@+id/filterIcon"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/checkg" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerListOfSchool"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:entries="@array/country"
+                                    android:scrollbarStyle="outsideOverlay"
+                                    android:textAlignment="center" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.ButtonBarLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <Button
+                                android:id="@+id/appyFilterButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Proceed" />
+                        </android.support.v7.widget.ButtonBarLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+            <!-- Seconf layout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginStart="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/personb" />
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:text="Send To"
+                                android:paddingStart="10dp"
+                                android:textSize="22dp" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="16dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:gravity="top|start"
+                                    android:hint="Message!"
+                                    android:padding="16dp"
+                                    android:scrollbars="vertical" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:shadowRadius="10"
+                                android:text="Send Notice" />
+                        </LinearLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+
+                    android:background="@color/red"
+                    android:clickable="true"
+                    app:fabSize="normal"
+                    app:rippleColor="@color/white"
+                    app:srcCompat="@drawable/filterw" />
+            </RelativeLayout>
+        </ViewSwitcher>
+    </android.support.v7.widget.CardView>
+
 
 
 </FrameLayout>
