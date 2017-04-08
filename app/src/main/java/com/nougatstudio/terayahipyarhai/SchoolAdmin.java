@@ -15,7 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import Fragments.Faculty.AddFaculty;
+import Fragments.School.AddFaculty;
+
 
 public class SchoolAdmin extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

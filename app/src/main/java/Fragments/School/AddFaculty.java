@@ -1,4 +1,4 @@
-package Fragments.Faculty;
+package Fragments.School;
 
 
 import android.os.Bundle;
