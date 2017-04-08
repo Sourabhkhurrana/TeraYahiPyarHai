@@ -3,6 +3,7 @@ package com.nougatstudio.terayahipyarhai;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import Fragments.Faculty.AddFaculty;
 
 public class SchoolAdmin extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -81,19 +84,40 @@ public class SchoolAdmin extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-//        if (id == R.id.nav_camera) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
+        if (id == R.id.nav_home) {
+
+
+        } else if (id == R.id.nav_schoolProfile) {
+
+        } else if (id == R.id.nav_studentRequest) {
+
+        } else if (id == R.id.nav_studentDetails) {
+
+        } else if (id == R.id.nav_studentAttendanceDatabase) {
+
+        } else if (id == R.id.nav_addFaculty) {
+
+            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
+            ft2.replace(R.id.fragmentContainerLayout, new AddFaculty());
+            ft2.commit();
+
+        } else if (id == R.id.nav_modifyFaculty) {
+
+        } else if (id == R.id.nav_notice) {
+
+        } else if (id == R.id.nav_notification) {
+
+        } else if (id == R.id.nav_logout) {
+
+        } else if (id == R.id.nav_payment) {
+
+        } else if (id == R.id.nav_contactUs) {
+
+        } else if (id == R.id.nav_aboutUs) {
+
+        } else if (id == R.id.nav_share) {
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
