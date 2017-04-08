@@ -1,5 +1,6 @@
 package com.nougatstudio.terayahipyarhai;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -88,7 +89,7 @@ public class SchoolAdmin extends AppCompatActivity
 
 
         } else if (id == R.id.nav_schoolProfile) {
-
+            startActivity(new Intent(this,SchoolProfile.class));
         } else if (id == R.id.nav_studentRequest) {
 
         } else if (id == R.id.nav_studentDetails) {

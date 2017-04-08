@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SchoolProfile"
+            android:label="@string/title_activity_school_profile"
+            android:theme="@style/MyAppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
