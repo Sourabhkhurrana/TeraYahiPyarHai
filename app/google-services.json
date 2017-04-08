@@ -1,0 +1,164 @@
+{
+  "project_info": {
+    "project_number": "545836382268",
+    "firebase_url": "https://faculty-dd01b.firebaseio.com",
+    "project_id": "faculty-dd01b",
+    "storage_bucket": "faculty-dd01b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545836382268:android:a1aca5e749b03f3c",
+        "android_client_info": {
+          "package_name": "com.nougatstudio.loginwindow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545836382268-fauftahqp29tovrjd5g0igot6e0e5fqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nougatstudio.loginwindow",
+            "certificate_hash": "9cff4f57c3249e46d82e160223ea4e30c5fc35aa"
+          }
+        },
+        {
+          "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRGXH4dK79CQeEeV6ujUnr3uNXR-PgO3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545836382268-o3uros7g31gg4nr4bo2kod25aq2hohb8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "RapidSoft.NDA"
+              }
+            },
+            {
+              "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545836382268:android:4b919e75ff72974c",
+        "android_client_info": {
+          "package_name": "com.nougatstudio.ndaclient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545836382268-blcgk3m1je2lnmpp66p2glthgag1vcjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nougatstudio.ndaclient",
+            "certificate_hash": "9cff4f57c3249e46d82e160223ea4e30c5fc35aa"
+          }
+        },
+        {
+          "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRGXH4dK79CQeEeV6ujUnr3uNXR-PgO3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545836382268-o3uros7g31gg4nr4bo2kod25aq2hohb8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "RapidSoft.NDA"
+              }
+            },
+            {
+              "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545836382268:android:ac240458285638c9",
+        "android_client_info": {
+          "package_name": "com.nougatstudio.terayahipyarhai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545836382268-sj6nns34mun0giad3a9rf4gtgth1dvat.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nougatstudio.terayahipyarhai",
+            "certificate_hash": "3b92c1a71b08fbb9e4d0aae9f1eb3d4cea470543"
+          }
+        },
+        {
+          "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRGXH4dK79CQeEeV6ujUnr3uNXR-PgO3A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545836382268-o3uros7g31gg4nr4bo2kod25aq2hohb8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "RapidSoft.NDA"
+              }
+            },
+            {
+              "client_id": "545836382268-1iinpng0o0rbp0bo8r136sgrpdd38pa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
