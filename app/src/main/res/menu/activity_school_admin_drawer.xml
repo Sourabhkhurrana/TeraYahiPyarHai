@@ -3,33 +3,86 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeg"
+            android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_schoolProfile"
+            android:icon="@drawable/schoolnameg"
+            android:title="School Profile" />
     </group>
+    <item android:title="Student">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_studentRequest"
+                    android:icon="@drawable/request"
+                    android:title="student Request" />
+                <item
+                    android:id="@+id/nav_studentDetails"
+                    android:icon="@drawable/schoolsummaryb"
+                    android:title="Student Details" />
+                <item
+                    android:id="@+id/nav_studentAttendanceDatabase"
+                    android:icon="@drawable/attendance"
+                    android:title="Student Attendance" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Faculty">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_addFaculty"
+                    android:icon="@drawable/facultyaddedr"
+                    android:title="Add Faculty" />
+                <item
+                    android:id="@+id/nav_modifyFaculty"
+                    android:icon="@drawable/modifypersonr"
+                    android:title="Modify Faculty" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Support">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_notice"
+                    android:icon="@drawable/noticep"
+                    android:title="Notice" />
+                <item
+                    android:id="@+id/nav_notification"
+                    android:icon="@drawable/notificationp"
+                    android:title="Notifications" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logoutp"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
 
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_payment"
+                    android:icon="@drawable/paymentb"
+                    android:title="Payment" />
+                <item
+                    android:id="@+id/nav_contactUs"
+                    android:icon="@drawable/contacts"
+                    android:title="Contact Us" />
+                <item
+                    android:id="@+id/nav_aboutUs"
+                    android:icon="@drawable/abouts"
+                    android:title="About Us" />
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+            </group>
         </menu>
     </item>
 
