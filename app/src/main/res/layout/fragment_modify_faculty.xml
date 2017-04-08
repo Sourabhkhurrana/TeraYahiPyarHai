@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     tools:context="Fragments.School.ModifyFaculty">
 
+
     <android.support.v7.widget.CardView
         android:id="@+id/cardView1"
         android:layout_width="match_parent"
@@ -42,23 +43,354 @@
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
-
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/cardView1"
+    <ScrollView
+        android:layout_below="@+id/cardView1"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <ViewSwitcher
-            android:id="@+id/viewSwitcher"
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/cardView"
-            android:layout_centerHorizontal="true">
+            app:cardElevation="5dp"
+            app:cardCornerRadius="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp">
 
-            <RelativeLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyNameIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/facultyaddedr" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:maxLength="100"
+                            android:maxLines="5"
+                            android:textColor="@color/Darkgreen" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyEmailIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/emailr" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/emailID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="Email ID"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyDobIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/emailr" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/DOB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="DOB"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyUidIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/idr" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyUid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="UId"
+                            android:inputType="textPostalAddress"
+                            android:maxLength="20"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyCountryIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/countryr" />
+
+                    <Spinner
+                        android:id="@+id/facultyCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:entries="@array/country"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/facultyStateIcon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/stater" />
+
+                        <Spinner
+                            android:id="@+id/facultyState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:entries="@array/City"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/facultyCityIcon"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/cityr" />
+
+                        <Spinner
+                            android:id="@+id/facultyCity"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:entries="@array/City"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyAddressIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/schooladdressr" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint=" Address"
+                            android:inputType="textPostalAddress"
+                            android:maxLength="100"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyPincodeIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/pincoder" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="Pincode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facultyContactIcon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/phoner" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical">
+
+                        <EditText
+                            android:id="@+id/facultyContactNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="Contact No"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:maxLines="5" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--<RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -402,269 +734,347 @@
 
                 </ScrollView>
 
-            </RelativeLayout>
+            </RelativeLayout>-->
 
-            <RelativeLayout
+            <!--<ViewSwitcher
+                android:id="@+id/viewSwitcher"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cardView"
+                android:layout_centerHorizontal="true">
 
-                <ScrollView
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <LinearLayout
+                    <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="10dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/filtertxt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:text="Filter School Options "
-                            android:textColor="@color/black"
-                            android:textSize="21dp"
-                            android:typeface="serif" />
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginStart="10dp"
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:src="@drawable/checkr" />
-
-                                <Switch
-                                    android:id="@+id/filterAllSwitch"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:gravity="center_horizontal|center_vertical"
-                                    android:text="All Schools" />
-
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
-
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginStart="10dp"
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:src="@drawable/activer" />
-
-
-                                <Switch
-                                    android:id="@+id/filterActiveStatusSwitch"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:gravity="center_horizontal|center_vertical"
-                                    android:text="Active Schools" />
-
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginStart="10dp"
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:src="@drawable/pendingr" />
-
-
-                                <Switch
-                                    android:id="@+id/filterPendingStatusSwitch"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:gravity="center_horizontal|center_vertical"
-                                    android:text="Pending Schools" />
-
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginStart="10dp"
-
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:src="@drawable/pincoder" />
-
-                                <Switch
-                                    android:id="@+id/filterpincodeSwitch"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:gravity="center_horizontal|center_vertical"
-                                    android:text="Schools By Pincode" />
-
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
-
-                        <android.support.v7.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="45dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="5dp"
-                            app:cardCornerRadius="10dp">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="40dp"
-                                android:layout_marginEnd="10dp"
-                                android:layout_marginStart="10dp"
-
-                                android:orientation="horizontal">
-
-                                <ImageView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:layout_gravity="center_vertical"
-                                    android:src="@drawable/idr" />
-
-                                <Switch
-                                    android:id="@+id/filterSchoolIDSwitch"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:gravity="center_horizontal|center_vertical"
-                                    android:text="School By SchoolID" />
-
-                            </LinearLayout>
-                        </android.support.v7.widget.CardView>
+                        android:layout_height="match_parent">
 
                         <LinearLayout
-                            android:id="@+id/filterSearchLinearLayout"
                             android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:layout_marginEnd="20dp"
-                            android:layout_marginStart="20dp"
+                            android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
-                            android:orientation="horizontal"
-                            android:visibility="gone">
+                            android:orientation="vertical">
 
-                            <ImageView
-                                android:id="@+id/filterSeacrhBoxIcon"
-                                android:layout_width="30dp"
-                                android:layout_height="30dp"
-                                android:layout_gravity="center_vertical"
-                                android:src="@drawable/pincodeg" />
-
-                            <android.support.design.widget.TextInputLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center_vertical">
-
-                                <EditText
-                                    android:id="@+id/filterSearchBox"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginStart="15dp"
-                                    android:gravity="center_vertical"
-                                    android:inputType="text"
-                                    android:maxLength="10"
-                                    android:maxLines="5" />
-                            </android.support.design.widget.TextInputLayout>
-                        </LinearLayout>
-
-
-                        <android.support.v7.widget.ButtonBarLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp">
-
-                            <Button
-                                android:id="@+id/appyFilterButton"
+                            <TextView
+                                android:id="@+id/filtertxt"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Apply Filter" />
-                        </android.support.v7.widget.ButtonBarLayout>
+                                android:gravity="center_horizontal"
+                                android:text="Filter School Options "
+                                android:textColor="@color/black"
+                                android:textSize="21dp"
+                                android:typeface="serif" />
 
-                    </LinearLayout>
-                </ScrollView>
-            </RelativeLayout>
-        </ViewSwitcher>
-    </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="10dp">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/checkr" />
+
+                                    <Switch
+                                        android:id="@+id/filterAllSwitch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="All Schools" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/activer" />
+
+
+                                    <Switch
+                                        android:id="@+id/filterActiveStatusSwitch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="Active Schools" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/pendingr" />
+
+
+                                    <Switch
+                                        android:id="@+id/filterPendingStatusSwitch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="Pending Schools" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
+
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/pincoder" />
+
+                                    <Switch
+                                        android:id="@+id/filterpincodeSwitch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="Schools By Pincode" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="10dp"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginStart="10dp"
+
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:src="@drawable/idr" />
+
+                                    <Switch
+                                        android:id="@+id/filterSchoolIDSwitch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:gravity="center_horizontal|center_vertical"
+                                        android:text="School By SchoolID" />
+
+                                </LinearLayout>
+                            </android.support.v7.widget.CardView>
+
+                            <LinearLayout
+                                android:id="@+id/filterSearchLinearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <ImageView
+                                    android:id="@+id/filterSeacrhBoxIcon"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/pincodeg" />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical">
+
+                                    <EditText
+                                        android:id="@+id/filterSearchBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginStart="15dp"
+                                        android:gravity="center_vertical"
+                                        android:inputType="text"
+                                        android:maxLength="10"
+                                        android:maxLines="5" />
+                                </android.support.design.widget.TextInputLayout>
+                            </LinearLayout>
+
+
+                            <android.support.v7.widget.ButtonBarLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <Button
+                                    android:id="@+id/appyFilterButton"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Apply Filter" />
+                            </android.support.v7.widget.ButtonBarLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+                </RelativeLayout>
+            </ViewSwitcher>-->
+        </android.support.v7.widget.CardView>
+
+
+    </ScrollView>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
 
-        android:background="@color/red"
-        android:clickable="true"
-        app:fabSize="normal"
-        app:rippleColor="@color/white"
-        app:srcCompat="@drawable/filterw" />
+        android:layout_marginRight="95dp">
+
+        <TextView
+            android:id="@+id/topicTextFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="Topics"
+            android:textColor="@color/Black" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:contextClickable="true"
+            android:src="@drawable/countryg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/leaveQuestionFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:text="Leave Question"
+            android:textColor="@color/Black" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/cityr" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/cityg"
+        app:elevation="6dp" />
+
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/floatingActionButton"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+
+    <!--android:background="@color/red"-->
+    <!--android:clickable="true"-->
+    <!--app:fabSize="normal"-->
+    <!--app:rippleColor="@color/white"-->
+    <!--app:srcCompat="@drawable/filterw" />-->
 
 </RelativeLayout>
