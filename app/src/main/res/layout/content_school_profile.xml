@@ -20,9 +20,9 @@
 
             <android.support.v7.widget.CardView
                 android:layout_width="120dp"
+                android:layout_marginTop="10dp"
                 android:layout_height="120dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="@dimen/fab_margin"
                 android:background="@color/GreyLike"
                 app:cardCornerRadius="3dp"
                 app:cardElevation="2dp"
@@ -48,7 +48,7 @@
                             android:layout_height="match_parent"
                             android:layout_margin="0.01dp"
                             android:background="@color/white"
-                            android:src="@drawable/schoolnameg" />
+                            android:src="@drawable/schoollogodummy" />
                     </RelativeLayout>
 
                     <LinearLayout
@@ -106,23 +106,30 @@
                     android:typeface="serif" />
             </LinearLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="5dp">
 
+                <ImageView
+                    android:id="@+id/schoolCLassIcon"
+                    android:layout_width="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/schoolCLass"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bookb" />
 
                 <Spinner
                     android:id="@+id/schoolCLass"
-                    android:layout_width="fill_parent"
+                    android:layout_width="200dp"
+                    android:layout_centerInParent="true"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:entries="@array/City"
                     android:textAlignment="center" />
-            </LinearLayout>
+            </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -132,11 +139,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/schoolIDIcon"
+                    android:id="@+id/viceChairmanIcon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/idr" />
+                    android:src="@drawable/vicechairmaniconb" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -144,13 +151,13 @@
                     android:layout_gravity="center_vertical">
 
                     <EditText
-                        android:id="@+id/schoolID"
+                        android:id="@+id/viceChairman"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
-                        android:hint="schoolID"
+                        android:hint="Vice Chairman"
                         android:inputType="textPostalAddress"
                         android:maxLength="20"
                         android:maxLines="5" />
@@ -166,11 +173,44 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/principalIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/personb" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/principal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="principal"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="5" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
                     android:id="@+id/emailIDIcon"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/emailr" />
+                    android:src="@drawable/emailb" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -184,9 +224,42 @@
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
-                        android:hint="Email ID"
-                        android:inputType="textEmailAddress"
-                        android:maxLength="50"
+                        android:hint="School Email ID"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="5" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pincodeIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/pincodeb" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:maxLength="12"
                         android:maxLines="5" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
@@ -204,7 +277,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/schooladdressr" />
+                    android:src="@drawable/ipb" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -224,128 +297,9 @@
                         android:maxLines="5" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/countryIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/countryr" />
-
-                <Spinner
-                    android:id="@+id/country"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:entries="@array/country"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="0.5"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/cityIcon"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/cityr" />
-
-                    <Spinner
-                        android:id="@+id/city"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:entries="@array/City"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="0.5"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/stateIcon"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/stater" />
-
-                    <Spinner
-                        android:id="@+id/state"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:entries="@array/City"
-                        android:textAlignment="center" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/pincodeIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@drawable/pincoder" />
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical">
-
-                    <EditText
-                        android:id="@+id/pincode"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="5dp"
-                        android:gravity="center_vertical"
-                        android:hint="Pincode"
-                        android:inputType="number"
-                        android:maxLength="6"
-                        android:maxLines="5" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="50dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
@@ -356,7 +310,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/phoner" />
+                    android:src="@drawable/phoneb" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -371,6 +325,75 @@
                         android:layout_marginStart="5dp"
                         android:gravity="center_vertical"
                         android:hint="Contact No"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:maxLines="5" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/website"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/websiteb" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center_vertical"
+                        android:hint="Website"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:maxLines="5" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/discriptionIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/detailb" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/discription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="5dp"
+
+                        android:gravity="center_vertical"
+                        android:hint="Discription"
                         android:inputType="number"
                         android:maxLength="12"
                         android:maxLines="5" />
