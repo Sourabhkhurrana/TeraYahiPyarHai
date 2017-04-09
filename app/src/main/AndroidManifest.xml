@@ -22,7 +22,8 @@
         <activity
             android:name=".SchoolProfile"
             android:label=" "
-            android:theme="@style/MyAppTheme.NoActionBar"></activity>
+            android:theme="@style/MyAppTheme.NoActionBar" />
+        <activity android:name=".StudentRegistration"></activity>
     </application>
 
 </manifest>

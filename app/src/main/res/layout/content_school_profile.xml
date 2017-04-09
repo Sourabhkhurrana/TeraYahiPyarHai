@@ -14,6 +14,8 @@
 
 
         <LinearLayout
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -299,6 +301,7 @@
                         android:hint="School Address"
                         android:inputType="textPostalAddress"
                         android:maxLength="100"
+                        android:textSize="16sp"
                         android:maxLines="5" />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>

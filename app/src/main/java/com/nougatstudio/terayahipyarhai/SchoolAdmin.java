@@ -124,7 +124,7 @@ public class SchoolAdmin extends AppCompatActivity
         } else if (id == R.id.nav_aboutUs) {
 
         } else if (id == R.id.nav_share) {
-
+startActivity(new Intent(this,StudentRegistration.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

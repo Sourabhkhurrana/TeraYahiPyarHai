@@ -15,6 +15,24 @@
         <item>Select Country</item>
         <item> India</item>
     </string-array>
+
+
+    <string-array name="className">
+        <item>Select Class</item>
+        <item> Class I</item>
+        <item> Class II</item>
+        <item> Class III</item>
+        <item> Class IV</item>
+        <item> Class V</item>
+        <item> Class VI</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Select Gender</item>
+        <item> Male</item>
+        <item> Female</item>
+        <item> Transgender</item>
+    </string-array>
     <string-array name="City">
         <item>Select City</item>
         <item> Delhi</item>

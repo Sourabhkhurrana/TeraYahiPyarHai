@@ -34,8 +34,8 @@
 
                 <ImageView
                     android:id="@+id/facultyNameIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/facultyaddedr" />
 
@@ -69,8 +69,8 @@
 
                 <ImageView
                     android:id="@+id/facultyEmailIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/emailr" />
 
@@ -103,8 +103,8 @@
 
                 <ImageView
                     android:id="@+id/facultyDobIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/emailr" />
 
@@ -137,8 +137,8 @@
 
                 <ImageView
                     android:id="@+id/facultyUidIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/idr" />
 
@@ -173,8 +173,8 @@
 
                 <ImageView
                     android:id="@+id/facultyCountryIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/countryr" />
 
@@ -205,8 +205,8 @@
 
                     <ImageView
                         android:id="@+id/facultyStateIcon"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/image_icon"
+                        android:layout_height="@dimen/image_icon"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/stater" />
 
@@ -228,8 +228,8 @@
 
                     <ImageView
                         android:id="@+id/facultyCityIcon"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="@dimen/image_icon"
+                        android:layout_height="@dimen/image_icon"
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/cityr" />
 
@@ -255,8 +255,8 @@
 
                 <ImageView
                     android:id="@+id/facultyAddressIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/schooladdressr" />
 
@@ -289,8 +289,8 @@
 
                 <ImageView
                     android:id="@+id/facultyPincodeIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/pincoder" />
 
@@ -324,8 +324,8 @@
 
                 <ImageView
                     android:id="@+id/facultyContactIcon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="@dimen/image_icon"
+                    android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/phoner" />
 
