@@ -50,7 +50,6 @@
                                 android:layout_margin="0.1dp"
                                 android:background="@color/white">
 
-
                                 <RelativeLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
@@ -110,7 +109,7 @@
                             android:layout_height="50dp"
                             android:layout_marginEnd="5dp"
                             android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:elevation="5dp"
                             app:cardCornerRadius="10dp">
 
@@ -176,7 +175,7 @@
                             android:layout_height="50dp"
                             android:layout_marginEnd="5dp"
                             android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="10dp"
                             android:elevation="5dp"
                             app:cardCornerRadius="10dp">
 

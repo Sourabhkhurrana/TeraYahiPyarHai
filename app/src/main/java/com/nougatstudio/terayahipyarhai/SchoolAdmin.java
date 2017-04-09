@@ -18,6 +18,7 @@ import android.view.MenuItem;
 import Fragments.School.AddFaculty;
 import Fragments.School.ModifyFaculty;
 import Fragments.School.Notices;
+import Fragments.School.StudentRequest;
 
 
 public class SchoolAdmin extends AppCompatActivity
@@ -94,7 +95,9 @@ public class SchoolAdmin extends AppCompatActivity
         } else if (id == R.id.nav_schoolProfile) {
             startActivity(new Intent(this,SchoolProfile.class));
         } else if (id == R.id.nav_studentRequest) {
-
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+            fragmentTransaction.commit();
         } else if (id == R.id.nav_studentDetails) {
 
         } else if (id == R.id.nav_studentAttendanceDatabase) {

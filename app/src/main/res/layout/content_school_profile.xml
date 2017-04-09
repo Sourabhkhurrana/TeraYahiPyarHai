@@ -146,7 +146,7 @@
                     android:layout_width="@dimen/image_icon"
                     android:layout_height="@dimen/image_icon"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/vicechairmaniconb" />
+                    android:src="@drawable/directorb" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
