@@ -71,6 +71,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     }
 
 
+
     public void customMessage(String message) {
         Snackbar.make(findViewById(R.id.signUpButton), message, Snackbar.LENGTH_SHORT).show();
     }
