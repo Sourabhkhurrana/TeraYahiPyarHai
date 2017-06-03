@@ -14,7 +14,7 @@
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_dashboard" />
     <item
-        android:id="@+id/navigationStudentNotification"
+        android:id="@+id/navigationStudentNotice"
         android:icon="@drawable/emailb"
         android:title="@string/title_dashboard" />
 

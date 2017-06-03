@@ -41,7 +41,7 @@ public class StudentAdmin extends AppCompatActivity {
                     fragmentTransaction.commit();
                     return true;
 
-                case R.id.navigationStudentNotification:
+                case R.id.navigationStudentNotice:
 
                     fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
                     fragmentTransaction.commit();
