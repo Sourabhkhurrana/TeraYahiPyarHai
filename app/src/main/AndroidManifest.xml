@@ -13,21 +13,30 @@
             android:name=".SchoolAdmin"
             android:label="@string/app_name"
             android:theme="@style/MyAppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SchoolProfile"
             android:label=" "
             android:theme="@style/MyAppTheme.NoActionBar" />
         <activity android:name=".StudentRegistration" />
-        <activity android:name=".SignUp" />
+
         <activity
             android:name=".StudentAdmin"
-            android:label="@string/title_activity_student_admin"></activity>
+            android:label="@string/title_activity_student_admin">
+
+        </activity>
+        <activity
+            android:windowSoftInputMode="stateHidden"
+            android:name=".SignUp"
+            android:label="@string/title_SignIn">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

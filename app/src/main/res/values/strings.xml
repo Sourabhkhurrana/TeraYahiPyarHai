@@ -40,9 +40,22 @@
     </string-array>
     <string name="msg_subscribed">Subscribed to news topic</string>
     <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    // Activity Titles
     <string name="title_activity_student_admin">StudentAdmin</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="title_SignIn">Sign In</string>
+
+    // SnackBar Messages
+    <string name="USER_ID_INVALID">Invalid User ID !</string>
+    <string name="USER_PASSWORD_LENGTH">Password Length Must Be Greater Then 3 !</string>
+    <string name="USER_PASSWORD_INVALID">Invalid Password !</string>
+
+
+    <string name="SIGN_UP">Sign Up</string>
+    <string name="SIGN_IN">Sign In</string>
+
 
 </resources>
