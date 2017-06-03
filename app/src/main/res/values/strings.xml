@@ -62,6 +62,12 @@
     <string name="NAVIGATION_STUDENT_NOTICE">Notice</string>
     <string name="NAVIGATION_STUDENT_PROFILE">Profile</string>
 
+    <string name="NAVIGATION_FACULTY_LIBRARY">Library</string>
+    <string name="NAVIGATION_FACULTY_ATTENDANCE">Attendance</string>
+    <string name="NAVIGATION_FACULTY_DASHBOARD">Dashboard</string>
+    <string name="NAVIGATION_FACULTY_NOTICE">Notice</string>
+    <string name="NAVIGATION_FACULTY_PROFILE">Profile</string>
+
     <string name="SIGN_UP">Sign Up</string>
     <string name="SIGN_IN">Sign In</string>
     <string name="title_activity_faculty_admin">FacultyAdmin</string>
