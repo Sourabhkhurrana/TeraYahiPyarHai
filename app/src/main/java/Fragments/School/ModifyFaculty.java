@@ -34,7 +34,7 @@ public class ModifyFaculty extends Fragment {
         cardView2 = (CardView) root.findViewById(R.id.cardView2);
 
         //DisableProgressBar();
-        EnableProgressBar();
+        //EnableProgressBar();
 
         return root;
     }
