@@ -22,31 +22,31 @@ public class StudentAdmin extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
 
-                case R.id.navigation_home:
+                case R.id.navigationStudentLibrary:
                     FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction1.replace(R.id.fragmentContainerLayout, new StudentRequest());
                     fragmentTransaction1.commit();
                     return true;
 
-                case R.id.navigation_dashboard:
+                case R.id.navigationStudentAttendance:
                     FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction2.replace(R.id.fragmentContainerLayout, new AddFaculty());
                     fragmentTransaction2.commit();
                     return true;
 
-                case R.id.navigation_notifications:
+                case R.id.navigationStudentDashboard:
                     FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction3.replace(R.id.fragmentContainerLayout, new Notices());
                     fragmentTransaction3.commit();
                     return true;
 
-                case R.id.navigation_dashboard1:
+                case R.id.navigationStudentNotification:
                     FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction4.replace(R.id.fragmentContainerLayout, new StudentRequest());
                     fragmentTransaction4.commit();
                     return true;
 
-                case R.id.navigation_notifications2:
+                case R.id.navigationStudentProfile:
                     FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction5.replace(R.id.fragmentContainerLayout, new StudentRequest());
                     fragmentTransaction5.commit();
@@ -62,7 +62,7 @@ public class StudentAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_admin);
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationStudentAdmin);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.getMenu().getItem(2).setChecked(true);
     
