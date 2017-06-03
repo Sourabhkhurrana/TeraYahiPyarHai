@@ -42,7 +42,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     } else if ((getString(userIDText).equals("student")) && (getString(userPasswordText).equals("asdf"))) {
                         startActivity(new Intent(this,StudentAdmin.class));
                     } else if ((getString(userIDText).equals("faculty")) && (getString(userPasswordText).equals("asdf"))) {
-                        startActivity(new Intent(this,StudentAdmin.class));
+                        startActivity(new Intent(this,FacultyAdmin.class));
                     }
                     else
                     {

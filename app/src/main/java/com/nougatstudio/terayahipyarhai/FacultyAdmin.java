@@ -3,9 +3,14 @@ package com.nougatstudio.terayahipyarhai;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import Fragments.School.AddFaculty;
+import Fragments.School.Notices;
+import Fragments.School.StudentRequest;
 
 public class FacultyAdmin extends AppCompatActivity {
 
@@ -16,18 +21,36 @@ public class FacultyAdmin extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
+                case R.id.navigationFacultyLibrary:
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
                     return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
+
+                case R.id.navigationFacultyAttendance:
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new AddFaculty());
+                    fragmentTransaction.commit();
                     return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
+
+                case R.id.navigationFacultyDashboard:
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new Notices());
+                    fragmentTransaction.commit();
+                    return true;
+
+                case R.id.navigationFacultyNotice:
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
+                    return true;
+
+                case R.id.navigationFacultyProfile:
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
                     return true;
             }
-            return false;
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+            fragmentTransaction.commit();
+            return true;
         }
 
     };
@@ -37,9 +60,10 @@ public class FacultyAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faculty_admin);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationFacultyAdmin);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.getMenu().getItem(2).setChecked(true);
+        navigation.setItemIconTintList(null);
     }
 
 }

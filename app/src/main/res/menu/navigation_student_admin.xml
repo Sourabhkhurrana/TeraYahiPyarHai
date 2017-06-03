@@ -4,19 +4,19 @@
     <item
         android:id="@+id/navigationStudentLibrary"
         android:icon="@drawable/bookb"
-        android:title="@string/title_home" />
+        android:title="@string/NAVIGATION_STUDENT_LIBRARY" />
     <item
         android:id="@+id/navigationStudentAttendance"
         android:icon="@drawable/attendanceb"
-        android:title="@string/title_notifications" />
+        android:title="@string/NAVIGATION_STUDENT_ATTENDANCE" />
     <item
         android:id="@+id/navigationStudentDashboard"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:title="@string/NAVIGATION_STUDENT_DASHBOARD" />
     <item
         android:id="@+id/navigationStudentNotice"
         android:icon="@drawable/emailb"
-        android:title="@string/title_dashboard" />
+        android:title="@string/NAVIGATION_STUDENT_NOTICE" />
 
     <item
         android:id="@+id/navigationStudentProfile"
