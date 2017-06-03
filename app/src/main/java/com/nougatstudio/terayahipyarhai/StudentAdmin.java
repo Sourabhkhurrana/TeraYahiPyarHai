@@ -20,42 +20,46 @@ public class StudentAdmin extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             switch (item.getItemId()) {
 
                 case R.id.navigationStudentLibrary:
-                    FragmentTransaction fragmentTransaction1 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction1.replace(R.id.fragmentContainerLayout, new StudentRequest());
-                    fragmentTransaction1.commit();
+
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigationStudentAttendance:
-                    FragmentTransaction fragmentTransaction2 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction2.replace(R.id.fragmentContainerLayout, new AddFaculty());
-                    fragmentTransaction2.commit();
+
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new AddFaculty());
+                    fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigationStudentDashboard:
-                    FragmentTransaction fragmentTransaction3 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction3.replace(R.id.fragmentContainerLayout, new Notices());
-                    fragmentTransaction3.commit();
+
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new Notices());
+                    fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigationStudentNotification:
-                    FragmentTransaction fragmentTransaction4 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction4.replace(R.id.fragmentContainerLayout, new StudentRequest());
-                    fragmentTransaction4.commit();
+
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigationStudentProfile:
-                    FragmentTransaction fragmentTransaction5 = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction5.replace(R.id.fragmentContainerLayout, new StudentRequest());
-                    fragmentTransaction5.commit();
+                    fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+                    fragmentTransaction.commit();
                     return true;
-            }
-            return false;
-        }
 
+
+            }
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
+            fragmentTransaction.commit();
+            return true;
+        }
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +69,7 @@ public class StudentAdmin extends AppCompatActivity {
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigationStudentAdmin);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         navigation.getMenu().getItem(2).setChecked(true);
-    
+        navigation.setItemIconTintList(null);
     }
 
 }
