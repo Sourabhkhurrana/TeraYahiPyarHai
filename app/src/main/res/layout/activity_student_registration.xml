@@ -306,6 +306,7 @@
                                     android:layout_gravity="center_vertical"
                                     android:layout_marginStart="5dp"
                                     android:gravity="center_vertical"
+
                                     android:hint="Father Name"
                                     android:inputType="textPersonName"
                                     android:maxLength="25"/>

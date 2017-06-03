@@ -23,7 +23,11 @@
             android:name=".SchoolProfile"
             android:label=" "
             android:theme="@style/MyAppTheme.NoActionBar" />
-        <activity android:name=".StudentRegistration"></activity>
+        <activity android:name=".StudentRegistration" />
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".StudentAdmin"
+            android:label="@string/title_activity_student_admin"></activity>
     </application>
 
 </manifest>

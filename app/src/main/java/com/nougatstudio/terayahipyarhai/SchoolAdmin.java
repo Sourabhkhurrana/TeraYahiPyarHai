@@ -123,9 +123,9 @@ public class SchoolAdmin extends AppCompatActivity
         } else if (id == R.id.nav_payment) {
 
         } else if (id == R.id.nav_contactUs) {
-
+            startActivity(new Intent(this,StudentAdmin.class));
         } else if (id == R.id.nav_aboutUs) {
-
+            startActivity(new Intent(this,SignUp.class));
         } else if (id == R.id.nav_share) {
 startActivity(new Intent(this,StudentRegistration.class));
         }
