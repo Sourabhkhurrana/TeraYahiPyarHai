@@ -30,8 +30,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         signInButton.setOnClickListener(this);
         signUpButton.setOnClickListener(this);
     }
-
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
