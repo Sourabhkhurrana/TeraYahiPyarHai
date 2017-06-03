@@ -18,6 +18,11 @@ import android.view.MenuItem;
 import Fragments.School.AddFaculty;
 import Fragments.School.ModifyFaculty;
 import Fragments.School.Notices;
+import Fragments.School.SchoolAttendanceSummary;
+import Fragments.School.SchoolEvents;
+import Fragments.School.SchoolNotifications;
+import Fragments.School.SchoolPaymentSummary;
+import Fragments.School.SchoolStudentDetail;
 import Fragments.School.StudentRequest;
 
 
@@ -39,7 +44,6 @@ public class SchoolAdmin extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -88,47 +92,35 @@ public class SchoolAdmin extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         if (id == R.id.nav_home) {
-
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new SchoolEvents());
         } else if (id == R.id.nav_schoolProfile) {
-            startActivity(new Intent(this,SchoolProfile.class));
+            startActivity(new Intent(this, SchoolProfile.class));
         } else if (id == R.id.nav_studentRequest) {
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragmentContainerLayout, new StudentRequest());
-            fragmentTransaction.commit();
         } else if (id == R.id.nav_studentDetails) {
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new SchoolStudentDetail());
         } else if (id == R.id.nav_studentAttendanceDatabase) {
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new SchoolAttendanceSummary());
         } else if (id == R.id.nav_addFaculty) {
-
-            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
-            ft2.replace(R.id.fragmentContainerLayout, new AddFaculty());
-            ft2.commit();
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new AddFaculty());
         } else if (id == R.id.nav_modifyFaculty) {
-            FragmentTransaction ft2 = getSupportFragmentManager().beginTransaction();
-            ft2.replace(R.id.fragmentContainerLayout, new ModifyFaculty());
-            ft2.commit();
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new ModifyFaculty());
         } else if (id == R.id.nav_notice) {
-            FragmentTransaction notice = getSupportFragmentManager().beginTransaction();
-            notice.replace(R.id.fragmentContainerLayout, new Notices());
-            notice.commit();
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new Notices());
         } else if (id == R.id.nav_notification) {
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new SchoolNotifications());
         } else if (id == R.id.nav_logout) {
 
         } else if (id == R.id.nav_payment) {
-
+            fragmentTransaction.replace(R.id.fragmentContainerLayout, new SchoolPaymentSummary());
         } else if (id == R.id.nav_contactUs) {
-            startActivity(new Intent(this,StudentAdmin.class));
         } else if (id == R.id.nav_aboutUs) {
-            startActivity(new Intent(this,SignUp.class));
         } else if (id == R.id.nav_share) {
-startActivity(new Intent(this,StudentRegistration.class));
         }
+
+        fragmentTransaction.commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
