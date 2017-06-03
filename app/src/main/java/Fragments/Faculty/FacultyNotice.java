@@ -1,4 +1,4 @@
-package Fragments.School;
+package Fragments.Faculty;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.nougatstudio.terayahipyarhai.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Notices extends Fragment {
+public class FacultyNotice extends Fragment {
 
 
-    public Notices() {
+    public FacultyNotice() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Notices extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notices, container, false);
+        return inflater.inflate(R.layout.fragment_faculty_notice, container, false);
     }
 
 }
